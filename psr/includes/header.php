@@ -16,16 +16,12 @@
 					<a aria-controls="rznavOffcanvas" aria-label="Report an issue" href="reportanissue.php" class="border-0 btn btn-danger btn-sm d-none d-lg-flex gap-2 align-items-center lh-1"><i class="ki-duotone ki-information-3 fs-4"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i> Report an issue
 					</a>
 					
-					<!-- 
-					<a data-bs-toggle="offcanvas" data-bs-target="#rznavOffcanvas" aria-controls="rznavOffcanvas" aria-label="All reported issues" href="" class="btn btn-outline-light btn-sm d-flex gap-2 align-items-center lh-1"><i class="ki-duotone ki-information-3 fs-4"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i> Issues
-					</a> -->
-					
 					<!-- if user logged in -->
 					<div class="btn-group account-dropdown">
-						<button type="button" class="btn btn-outline-light btn-sm d-flex gap-2 align-items-center lh-1 p-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						<button type="button" id="user-profile-drop" class="btn btn-outline-light btn-sm d-flex gap-2 align-items-center lh-1 p-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 							<i class="ki-duotone ki-user fs-4" aria-hidden="true"><span class="path1"></span><span class="path2"></span></i>
 						</button>
-						<ul class="dropdown-menu">
+						<ul class="dropdown-menu shadow">
 							<li><a class="dropdown-item p-2 px-3 d-flex align-items-center gap-2" href="./"><i class="ki-duotone ki-information-2 fs-4"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Current issues</a></li>
 							<li><a class="dropdown-item p-2 px-3 d-flex align-items-center gap-2" href="reportanissue.php"><i class="ki-duotone ki-information-5 fs-4"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Report an issue</a></li>
 							<li><a class="dropdown-item p-2 px-3 d-flex align-items-center gap-2" href="myincidents.php"><i class="ki-duotone ki-information-3 fs-4"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Your reported issues</a></li>

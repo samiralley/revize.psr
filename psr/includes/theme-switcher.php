@@ -1,4 +1,3 @@
-<!-- #note just for fun :) -->
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
 	<symbol id="check2" viewBox="0 0 16 16">
 		<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
@@ -16,7 +15,7 @@
 </svg>
 
 <div class="dropdown bd-mode-toggle">
-	<button class="btn btn-light border-0 btn-sm dropdown-toggle d-flex align-items-center h-100"
+	<button class="btn btn-outline-light btn-sm dropdown-toggle d-flex align-items-center h-100"
 		id="bd-theme"
 		type="button"
 		aria-expanded="false"

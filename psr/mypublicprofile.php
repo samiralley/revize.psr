@@ -33,7 +33,7 @@
 						</svg>
 
 						<div class="dropdown bd-mode-toggle">
-							<button class="btn btn-light border-0 btn-sm dropdown-toggle d-flex align-items-center h-100" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+							<button class="btn btn-outline-light btn-sm dropdown-toggle d-flex align-items-center h-100" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
 								<svg class="bi my-1 theme-icon-active" width="1rem" height="1rem">
 									<use href="#sun-fill"></use>
 								</svg>
@@ -78,7 +78,7 @@
 						<div class="d-flex align-items-stretch ms-auto gap-2">
 
 							<div class="btn-group account-dropdown">
-								<button type="button" class="btn btn-outline-light btn-sm d-flex gap-2 align-items-center lh-1 p-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+								<button type="button" id="user-profile-drop" class="btn btn-outline-light btn-sm d-flex gap-2 align-items-center lh-1 p-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 									<i class="ki-duotone ki-user fs-4" aria-hidden="true"><span class="path1"></span><span class="path2"></span></i>
 								</button>
 								<ul class="dropdown-menu" style="">

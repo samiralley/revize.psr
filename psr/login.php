@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
 
@@ -7,29 +7,28 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Login</title>
+	<title>SiteName</title>
 	<meta name="description" content="">
-	<meta name="robots" content="index, follow">
+	<meta name="robots" content="noindex, nofollow">
 
 	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-	<!-- #bootstrap css and fonts -->
-	<link href="_assets_/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="_assets_/plugins/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-	<!-- #bootstrap js + popper js -->
-	<script src="_assets_/plugins/popperjs/popper.min.js"></script>
-	<script src="_assets_/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<!-- #layout css -->
-	<link href="_assets_/css/layout.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-	<link rel="stylesheet" href="_assets_/font-icons/font/duotone/style.css">
-
-	<!-- #favicons -->
 	<link rel="shortcut icon" href="_assets_/images/favicon.ico">
-	<link rel="apple-touch-icon" href="_assets_/images/touch-icon.png">
-
+	
+	<link rel="stylesheet" href="_assets_/font-icons/font/duotone/style.css">
+	
+	<link href="_assets_/css/layout.css" rel="stylesheet">
 </head>
 
 <body id="sign-in-form" class="vh-100 px-4 px-lg-0">

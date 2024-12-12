@@ -5,9 +5,7 @@
 
 		var $window = $(window),
 			$body = $('body'),
-			$html = $('html'),
-			$rzBtnsContainer = $('.rz-btns-container');
-
+			$html = $('html');
 
 		$window.on('load', function() {
 
@@ -33,109 +31,11 @@
 		
 		});
 		
-		jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up"><i class="bi bi-plus-lg"></i></div><div class="quantity-button quantity-down"><i class="bi bi-dash-lg"></i></div></div>').insertAfter('.quantity input');
-		jQuery('.quantity').each(function() {
-			var spinner = jQuery(this),
-				input = spinner.find('input[type="number"]'),
-				btnUp = spinner.find('.quantity-up'),
-				btnDown = spinner.find('.quantity-down'),
-				min = input.attr('min'),
-				max = input.attr('max');
-		
-			btnUp.click(function() {
-				var oldValue = parseFloat(input.val());
-				if (oldValue >= max) {
-					var newVal = oldValue;
-				} else {
-					var newVal = oldValue + 1;
-				}
-				spinner.find("input").val(newVal);
-				spinner.find("input").trigger("change");
-			});
-		
-			btnDown.click(function() {
-				var oldValue = parseFloat(input.val());
-				if (oldValue <= min) {
-					var newVal = oldValue;
-				} else {
-					var newVal = oldValue - 1;
-				}
-				spinner.find("input").val(newVal);
-				spinner.find("input").trigger("change");
-			});
-		
-		});
-		
 		const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 		const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 		const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 		const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-
-		// for revize buttons container
-		$rzBtnsContainer.each(function() {
-			var $container = $(this);
-			if ($container.html().trim() != "") {
-				$container.closest(".has-edit-buttons").addClass('yes-has-edit-buttons');
-			}
-		});
-		$(".has-edit-buttons").not(".yes-has-edit-buttons").removeClass("has-edit-buttons");
-
-	// Keyboard Navigation: Nav, hiddenLinks
-		var isClick = false;
-		$("#hiddenLinks  li a, a, button, .toggle, .toggle2").on('focusin', function(e) {
-			if (isClick === false) {
-				$(".focused").removeClass("focused");
-				$(e.currentTarget).parents("#hiddenLinks li").addClass("focused");
-				$(".opened:not(.focused) ul:visible,.opened2:not(.focused) ul:visible").slideUp().parent().removeClass("opened opened2");
-			} else {
-				$(".focused").removeClass("focused");
-				isClick = false;
-			}
-		});
-		
-		// prevent focused class changes on click - This way arrows wont pop when clicking nav links
-		$("#hiddenLinks a").on('mousedown', function() {
-			isClick = true;
-		});
-
- 		$('.freeformPagesSettings').on('click', function(e) {
-			$('.right-col-wrap').toggleClass("hide-settings");
-			$(this).toggleClass("only-icon");
-			$('.savebtns').toggleClass("show-savebtns");
-			e.preventDefault();
-		});	
-					
-		// Menu Arrows and Toggles
-		$("#hiddenLinks>li>ul").addClass('first-level');
-		$('#hiddenLinks>li:has(ul)').each(function() {
-			$(this).addClass('has-children');
-			$('<a href="#" class="bi bi-chevron-down toggle" tabindex="0" aria-haspopup="true" aria-expanded="false" id="hiddenLinks-dropdown-toggle-' + $(this).index() + '" aria-label="Show Flyout for ' + $(this).find('a:first').text() + '"></a>').insertAfter($(this).find('a:first'));
-			$(this).find('ul:first').attr('aria-labelledby', 'hiddenLinks-dropdown-toggle-' + $(this).index());
-		});
-		
-	$(".toggle").on("click keydown", function(e) {
-			if (e.keyCode === 13 || e.type === 'click') {
-				e.preventDefault();
-				var $parent = $(this).parent();
-				var $parentLi = $parent.parent();
-				$parent.toggleClass('opened');
-				if ($parent.addClass('active') && $(this).next('.first-level').is(":visible")) {
-					$(this).next('.first-level').slideUp();
-					$parent.removeClass('active');
-					$(this).attr({
-						'aria-expanded': 'false'
-					});
-				} else {
-					$(this).attr({
-						'aria-expanded': 'true'
-					});
-					$(".first-level").slideUp("slow");
-					$parent.addClass('active');
-					$(this).next('.first-level').slideToggle();
-				}
-			}
-		});
 
 	})(jQuery);
 	
